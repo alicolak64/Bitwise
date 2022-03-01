@@ -105,15 +105,15 @@ public class Bitwise {
 
         } else if (choice == 1) {
 
-            Scanner scanner2 = new Scanner(System.in);
+            scanner.nextLine();
 
             if (choice2 == 0 || choice2 == 1 || choice2 == 2) {
 
                 System.out.println("First String : ");
-                String string1 = scanner2.nextLine();
+                String string1 = scanner.nextLine();
 
                 System.out.println("Second String : ");
-                String string2 = scanner2.nextLine();
+                String string2 = scanner.nextLine();
 
                 String str1 = convert(string1, string2)[0];
                 String str2 = convert(string1, string2)[1];
