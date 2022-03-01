@@ -14,25 +14,25 @@ public class Bitwise {
 
     public static void main(String[] args) {
 
-        Scanner scanner = new Scanner(System.in);
+        Scanner input = new Scanner(System.in);
 
         System.out.println("Give the type of input? int=0, string=1, double=2");
 
-        int choice = scanner.nextInt();
+        int choice = input.nextInt();
 
         System.out.println("Give the type of input? or=0, and=1, xor=2, complement=3, right shift=4, left shift=5");
 
-        int choice2 = scanner.nextInt();
+        int choice2 = input.nextInt();
 
         if (choice == 0) {
 
             if (choice2 == 0 || choice2 == 1 || choice2 == 2) {
 
                 System.out.println("First Integer Number : ");
-                int number1 = scanner.nextInt();
+                int number1 = input.nextInt();
 
                 System.out.println("Second Integer Number : ");
-                int number2 = scanner.nextInt();
+                int number2 = input.nextInt();
 
                 String str = convert(number1);
 
@@ -71,7 +71,7 @@ public class Bitwise {
             } else if (choice2 == 3) {
 
                 System.out.println("Integer Number : ");
-                int number = scanner.nextInt();
+                int number = input.nextInt();
 
                 String str = convert(number);
 
@@ -82,10 +82,10 @@ public class Bitwise {
             } else if (choice2 == 4 || choice2 == 5) {
 
                 System.out.println("Integer Number : ");
-                int number = scanner.nextInt();
+                int number = input.nextInt();
 
                 System.out.println("Shift Number : ");
-                int shift = scanner.nextInt();
+                int shift = input.nextInt();
 
                 String str = convert(number);
 
@@ -105,15 +105,15 @@ public class Bitwise {
 
         } else if (choice == 1) {
 
-            scanner.nextLine();
+            input.nextLine();
 
             if (choice2 == 0 || choice2 == 1 || choice2 == 2) {
 
                 System.out.println("First String : ");
-                String string1 = scanner.nextLine();
+                String string1 = input.nextLine();
 
                 System.out.println("Second String : ");
-                String string2 = scanner.nextLine();
+                String string2 = input.nextLine();
 
                 String str1 = convert(string1, string2)[0];
                 String str2 = convert(string1, string2)[1];
@@ -156,10 +156,10 @@ public class Bitwise {
             if (choice2 == 0 || choice2 == 1 || choice2 == 2) {
 
                 System.out.println("First Double Number : ");
-                double number1 = scanner.nextDouble();
+                double number1 = input.nextDouble();
 
                 System.out.println("Second Double Number : ");
-                double number2 = scanner.nextDouble();
+                double number2 = input.nextDouble();
 
                 String str1 = convert(number1);
 
